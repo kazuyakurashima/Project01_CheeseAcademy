@@ -1,0 +1,564 @@
+/* ここから下に記載していく */
+
+
+/* body全体の設定 */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    /* フォント指定無しなのでこちらでいくつか設定 */
+    color: #222222;
+    /* カラー（ほぼ黒）は指示書指定 */
+}
+
+a {
+    text-decoration: none;
+    /* リンクに下線がつかないように設定 */
+}
+
+/* 見た目の調整 */
+h1 {
+    font-size: 48px;
+    /* h1に48pxを指定（指示書指定） */
+    font-weight: bold;
+    /* 太字を指定（任意） */
+    margin-bottom: 30px;
+    /* h1の下に余白を30px（指示書指定） */
+}
+
+p {
+    font-size: 32px;
+    /* pタグに32pxを指定（指示書指定） */
+}
+
+
+
+
+/* headerの設定 */
+
+/* container（文字）設定 */
+.container {
+    width: 1200px;
+    /* サイト全体幅1200px作成（指示書指定） */
+    margin: 0 auto;
+    /* 上下は0,左右は自動調整 */
+}
+
+header {
+    display: flex;
+    /* header-right leftを同一ラインに揃える */
+    justify-content: space-between;
+    height: 121px;
+    /* fzが21px、上下50pxのマージン（指示書指定） */
+    align-items: center;
+    /* 縦方向に中央揃えにした */
+    font-size: 21px;
+    /* fzが21pxは指示書指定 */
+}
+
+.header-right {
+    display: flex;
+    /* menuを横に並べる */
+}
+
+/* スムーズにリンクしてね！ */
+html {
+    scroll-behavior: smooth;
+}
+
+.header-right a {
+    color: #222222;
+    /* リンクなので個別に色（指示書の色）を指定した */
+    display: block;
+    /* aはインライン要素なのでそれをブロック */
+    width: 150px;
+    /* menuの選択幅を150pxに指定（指定しないと文字の長さになる） */
+    text-align: center;
+    /* テキストを150px内で中央に揃える */
+    line-height: 121px;
+    /* クリック高さの範囲を121pxのうち121pxにした */
+    transition: all 0.3s ease;
+    /* 変化を0．3sつけた＆カッコ良いアニメ効果 */
+    cursor: pointer;
+    /* カーソルに手が出てくるよ */
+}
+
+.header-right a:hover {
+    background-color: rgba(227, 227, 136, 0.495)
+        /* hoverさせた色を恐らくコーポレートカラーだろう黄色にした */
+}
+
+
+
+
+/* top-wrapper（全体）設定 */
+.top-wrapper {
+    padding: 195px 0;
+    /* サンプルを参考に、pxメチャ！！！調整 */
+    background-image: url(../img/mainbg.png);
+    color: white;
+    /* サンプルを参考に、白指定 */
+    background-size: cover;
+    /* 背景画像を自動調整にした */
+    background-position: center;
+    text-align: center;
+    /* テキストを中央揃え */
+}
+
+.logo-cheese {
+    width: 360px;
+    /* 見た目でpxを調整 */
+    padding: 0 50px;
+}
+
+
+/* sectionの設定 */
+
+/* aboutの設定 */
+/* マージンをボトムに統一して作った */
+.about {
+    text-align: center;
+}
+
+.mb-0 {
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-24 {
+    margin-bottom: 24px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+.mb-70 {
+    margin-bottom: 70px;
+}
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+/* 文字の見た目設定 */
+.about h2 {
+    font-size: 24px;
+    /* h2に48pxを指定（指示書指定） */
+    font-weight: bold;
+    /* 太字を指定（任意） */
+    margin-top: 60px;
+    /* h2の上に余白を60px（指示書指定） */
+    color: #ffd61a;
+    /* チーズの黄色（指示書指定） */
+}
+
+.about h4 {
+    font-size: 18px;
+    /* h2に48pxを指定（指示書指定） */
+    margin-bottom: 60px;
+    /* h2の下に余白を60px（指示書指定） */
+    color: #222222;
+    /* 黒（指示書指定） */
+}
+
+.about p {
+    font-size: 16px;
+    /* fz16pxは（指示書指定） */
+}
+
+/* 写真は四枚をフレックボックス＆wrapで並べた */
+.phot-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* courseの設定 */
+.course {
+    text-align: center;
+}
+
+.course-center p {
+    text-align: center !important;
+    /* 強制的に中央揃えにする */
+    margin-left: 0 !important;
+    /* 左マージンを0にする */
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+
+.course h2 {
+    font-size: 24px;
+    /* h2に48pxを指定（指示書指定） */
+    font-weight: bold;
+    /* 太字を指定（任意） */
+    margin-top: 120px;
+    /* h2の上に余白を120px（指示書指定） */
+    margin-bottom: 40px;
+    color: #222222;
+    /* 黒色 */
+}
+
+.course p {
+    font-size: 16px;
+    /* fz16pxは（指示書指定） */
+    line-height: 1.8;
+    /* 行間を1.8倍に設定 */
+    text-align: left;
+    margin-left: 50px;
+}
+
+.course-item.reverse p {
+    font-size: 16px;
+    /* fz16pxは（指示書指定） */
+    line-height: 1.8;
+    /* 行間を1.8倍に設定 */
+    text-align: left;
+    margin-left: 400px !important;
+    /* ええい、この辺は目分量じゃい！ */
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-item img {
+    width: 100%;
+    height:100%;
+}
+
+.course-item .text {
+    width: 100%;
+    background-color: #fafafa;
+    height: 100%;
+}
+
+/* 文章と写真逆転の巻 */
+.course-item.reverse {
+    flex-direction: row-reverse;
+}
+
+
+
+/* NEWSの設定 */
+/* マージンをボトムに統一して作った */
+.news {
+    text-align: center;
+}
+
+/* 文字の見た目設定 */
+.news h2 {
+    font-size: 24px;
+    /* h2に48pxを指定（指示書指定） */
+    font-weight: bold;
+    /* 太字を指定（任意） */
+    margin-top: 60px;
+    /* h2の上に余白を60px（指示書指定） */
+    color: #ffd61a;
+    /* チーズの黄色（指示書指定） */
+}
+
+.news h4 {
+    font-size: 18px;
+    /* h2に48pxを指定（指示書指定） */
+    margin-bottom: 60px;
+    /* h2の下に余白を60px（指示書指定） */
+    color: #222222;
+    /* 黒（指示書指定） */
+}
+
+.news-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 320px 320px 320px;
+    gap: 30px;
+    /* grid-template-rows: auto; */
+}
+
+.news-item {
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.news p {
+    font-size: 14px;
+    text-align: left;
+    /* fz16pxは（指示書指定） */
+}
+
+.news-container .text {
+    width: auto;
+    height: auto;
+}
+
+
+
+.news-item:hover {
+    background-color: rgba(227, 227, 136, 0.495)
+        /* hoverさせた色を恐らくコーポレートカラーだろう黄色にした */
+}
+
+.more-btn {
+    background-color: #ffd61a;
+    /* 黄色 */
+    color: white;
+    /* テキスト色を白 */
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* easeはカッコ良いアニメ効果らしい */
+}
+
+.more-btn:hover {
+    background-color: #ffb700;
+    /* ホバー時の色を少し濃い黄色に変更 */
+}
+
+.more-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    grid-column: span 3;
+}
+
+
+
+
+
+
+
+
+/* accessの設定 */
+
+/* 文字の見た目設定 */
+.access h2 {
+    font-size: 24px;
+    /* h2に48pxを指定（指示書指定） */
+    font-weight: bold;
+    /* 太字を指定（任意） */
+    text-align: center;
+}
+
+.access h4 {
+    font-size: 18px;
+    /* h2に18pxを指定（指示書指定） */
+    margin-bottom: 60px;
+    /* h2の下に余白を60px（指示書指定） */
+    color: #222222;
+    /* 黒（指示書指定） */
+    text-align: center;
+}
+
+.access p {
+    font-size: 16px;
+    text-align: left;
+    /* fz16pxは（指示書指定） */
+}
+
+/* 全体コンテナのスタイル */
+.access-container {
+    width: 1200px;
+    margin: 60px auto;
+    /* 上下60pxは指示書 */
+    padding: 30px 0;
+    background-color: #fafafa;
+}
+
+/* Google Mapのコンテナ */
+.map-container {
+    margin-bottom: 60px;
+}
+/* 地図の下６０pxも指示書 */
+
+/* 各項目とその詳細の配置 */
+.location-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0px;
+    gap: 50px;
+    /* 項目名と詳細の間に50pxのスペースを設定（指示書指定なし） */
+}
+
+.location-details {
+    /* 右側の内容 */
+    text-align: left;
+}
+
+/* 各項目に適切な余白を設定 */
+.location-labels p,
+.location-details p {
+    margin: 30px 0;
+    /* 30pxの上下の余白 */
+}
+
+
+
+
+/* contactの設定 */
+.contact-container {
+    width: 1200px;
+    /* 全体の幅を1200px指示書通り */
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 24px;
+    /* h2に18pxを指定（指示書指定） */
+    font-weight: bold;
+    /* 太字を指定（任意） */
+    text-align: center;
+}
+
+.contact h4 {
+    font-size: 18px;
+    /* 小見出しのフォントサイズを18pxに設定 */
+    margin-bottom: 60px;
+    /* 小見出し下に60pxの余白 */
+    text-align: center;
+}
+
+.contact-text p {
+    font-size: 16px;
+    /* テキスト部分のフォントサイズを16pxに設定 */
+    line-height: 1.8;
+    /* 行間を1.8倍に設定 */
+    text-align: center;
+}
+
+
+/* 各フォーム項目のグループ */
+.form2 {
+    width: 640px;
+    /* フォームの幅を指定（適宜調整） */
+    margin: 0 auto;
+    /* 左右のマージンを自動にして中央揃え */
+    padding: 20px;
+    /* フォームの内側の余白を設定 */
+    border-bottom: 1px solid #bfbfbf;
+    /* オプションで、フォーム下線を追加 */
+}
+
+
+.form-group {
+    display: flex;
+    width: 640px;
+    align-items: center;
+    margin-bottom: 30px;
+    border-top: 1px solid #bfbfbf;
+    padding: 10px 0;
+}
+
+/* 項目名のスタイル */
+.form-group label {
+    width: 400px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+/* 入力フィールド、セレクトボックス */
+
+.input-text,
+.select-box {
+    width: 400px;
+    height: 36px;
+    border: 1px solid #bfbfbf;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.input-textarea {
+    width: 400px;
+    /* 名前やカナと同じ幅に設定 */
+    height: 144px;
+    /* 高さを4倍に設定（お好みで調整可能） */
+    border: 1px solid #bfbfbf;
+    /* 他の要素と同じように枠線を追加 */
+    padding: 8px;
+    /* 内側の余白 */
+    box-sizing: border-box;
+    /* パディングを含めたボックスサイズ調整 */
+}
+
+/* チェックボックスグループのスタイル */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 64px;
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+/* 送信ボタンのスタイル */
+.submit-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #ffd61a;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    width: 300px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    /* カーソルに手が出てくるよ */
+    transition: background-color 0.3s ease;
+     /* easeはカッコ良いアニメ効果らしい */
+}
+
+
+.submit-btn:hover {
+    background-color: #ffb700;
+    /* ボタンのホバー時の背景色 */
+}
+
+
+
+
+
+
+footer {
+    background-color: #707070;
+    /* 背景色 */
+    padding: 30px 0;
+    /* 上下に30pxの余白を設定 */
+    text-align: center;
+    /* 中央寄せ */
+    margin-top: 140px;
+}
+
+footer p {
+    color: #ffffff;
+    /* テキスト色を白に設定 */
+    font-size: 14px;
+    /* 文字サイズを14pxに設定 */
+    margin: 0;
+    /* 余計なマージンをなくす */
+}
